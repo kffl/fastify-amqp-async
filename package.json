@@ -1,0 +1,41 @@
+{
+  "name": "fastify-amqp-async",
+  "version": "0.0.0",
+  "description": "Fastify AMQP plugin, which uses amqplib-as-promised so as to allow for Promise-based RabbitMQ operations.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "format": "prettier --write '**/*.{js,ts}'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kffl/fastify-amqp-async.git"
+  },
+  "keywords": [
+    "amqp",
+    "async",
+    "fastify",
+    "fastify-plugin",
+    "amqplib-as-promised",
+    "amqplib",
+    "rabbitmq"
+  ],
+  "author": "Paweł Kuffel <pawel@kuffel.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kffl/fastify-amqp-async/issues"
+  },
+  "homepage": "https://github.com/kffl/fastify-amqp-async#readme",
+  "devDependencies": {
+    "@types/amqplib": "^0.8.2",
+    "@types/jest": "^27.0.3",
+    "fastify": "^3.25.1",
+    "jest": "^27.4.5",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "amqplib-as-promised": "^4.0.0",
+    "fastify-plugin": "^3.0.0"
+  }
+}
