@@ -1,5 +1,5 @@
 const fastify = require('fastify');
-const fastifyAmqpAsync = require('../index');
+const fastifyAmqpAsync = require('fastify-amqp-async');
 const crypto = require('crypto');
 
 const app = fastify();
