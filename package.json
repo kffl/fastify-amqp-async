@@ -1,6 +1,6 @@
 {
   "name": "fastify-amqp-async",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Fastify AMQP plugin, which uses amqplib-as-promised so as to allow for Promise-based RabbitMQ operations.",
   "main": "index.js",
   "scripts": {
