@@ -13,15 +13,15 @@ declare namespace fastifyAmqpAsync {
          */
         connectionString?: string;
         /**
-         * Spawn a confirm channel (awaiting publisher confirmations)
+         * Spawn a confirm channel (awaiting publisher confirmations) exposed via FastifyInstance.amqp.confirmChannel
          * @default true
          */
-        useConfirmChannel?: bool;
+        useConfirmChannel?: boolean;
         /**
-         * Spawn a regular channel (fire-and-forget)
+         * Spawn a regular channel (fire-and-forget) exposed via FastifyInstance.amqp.channel
          * @default false
          */
-        useRegularChannel?: bool;
+        useRegularChannel?: boolean;
     }
 }
 
