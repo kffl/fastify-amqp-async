@@ -1,4 +1,5 @@
-import { Channel, Connection, ConfirmChannel } from 'amqplib-as-promised/lib';
+import { Channel, Connection } from 'amqplib-as-promised/lib';
+import { ConfirmChannel } from 'amqplib-as-promised/lib/confirm-channel';
 import Fastify, { FastifyInstance } from 'fastify';
 import { expectAssignable, expectType } from 'tsd';
 import fastifyAmqpAsync from './index';
