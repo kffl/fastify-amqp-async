@@ -1,5 +1,9 @@
 # Fastify AMQP plugin with a modern, promise-based API
 
+[![CI Workflow](https://github.com/kffl/fastify-amqp-async/actions/workflows/ci.yml/badge.svg)](https://github.com/kffl/fastify-amqp-async/actions/workflows/ci.yml)
+[![NPM version](https://img.shields.io/npm/v/fastify-amqp-async.svg?style=flat)](https://www.npmjs.com/package/fastify-amqp-async)
+[![NPM downloads](https://img.shields.io/npm/dm/fastify-amqp-async.svg?style=flat)](https://www.npmjs.com/package/fastify-amqp-async)
+
 **fastify-amqp-async** is a Fastify plugin inspired by **fastify-amqp** which allows for interacting with RabbitMQ using a more modern, Promise-based API provided by [amqplib-as-promised](https://github.com/twawszczak/amqplib-as-promised), so that writing publishers/consumers doesn't feel like 2013.
 
 ## Features
@@ -12,6 +16,12 @@
 
 ```
 npm install fastify-amqp-async
+```
+
+The underlying `amqplib-as-promised` library exposes some objects of `amqplib` native types such as `Message`. In order to allow for proper typechecks of such objects, it is recommended to install `@types/amqplib` as a development dependency:
+
+```
+npm install --save-dev @types/amqplib
 ```
 
 ## Usage
@@ -39,6 +49,8 @@ app.get('/produce', async function (req, res) {
     res.send("done");
 });
 ```
+
+You can find additional usage examples in the `examples` folder.
 
 ## Reference
 
