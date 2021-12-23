@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest && tsd",
-    "format": "prettier --write '**/*.{js,ts}'",
-    "preinstall": "npx npm-force-resolutions"
+    "format": "prettier --write '**/*.{js,ts}'"
   },
   "repository": {
     "type": "git",
