@@ -3,6 +3,7 @@
 [![CI Workflow](https://github.com/kffl/fastify-amqp-async/actions/workflows/ci.yml/badge.svg)](https://github.com/kffl/fastify-amqp-async/actions/workflows/ci.yml)
 [![NPM version](https://img.shields.io/npm/v/fastify-amqp-async.svg?style=flat)](https://www.npmjs.com/package/fastify-amqp-async)
 [![NPM downloads](https://img.shields.io/npm/dm/fastify-amqp-async.svg?style=flat)](https://www.npmjs.com/package/fastify-amqp-async)
+[![Known Vulnerabilities](https://snyk.io/test/github/kffl/fastify-amqp-async/badge.svg)](https://snyk.io/test/github/kffl/fastify-amqp-async)
 
 **fastify-amqp-async** is a Fastify plugin inspired by **fastify-amqp** which allows for interacting with RabbitMQ using a more modern, Promise-based API provided by [amqplib-as-promised](https://github.com/twawszczak/amqplib-as-promised), so that writing publishers/consumers doesn't feel like 2013.
 
