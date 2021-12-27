@@ -1,5 +1,4 @@
-import { Channel, Connection } from 'amqplib-as-promised/lib';
-import { ConfirmChannel } from 'amqplib-as-promised/lib/confirm-channel';
+import { Channel, ConfirmChannel, Connection } from 'amqplib-as-promised/lib';
 import { FastifyPluginAsync } from 'fastify';
 
 declare namespace fastifyAmqpAsync {
