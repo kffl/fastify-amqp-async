@@ -4,7 +4,8 @@ const amqplibAsPromised = require('amqplib-as-promised');
 const defaultOptions = {
     connectionString: 'amqp://guest:guest@localhost:5672',
     useConfirmChannel: true,
-    useRegularChannel: false
+    useRegularChannel: false,
+    ignoreOnClose: false
 };
 
 async function fastifyAmqpAsync(fastify, options) {
@@ -15,7 +16,9 @@ async function fastifyAmqpAsync(fastify, options) {
     );
 
     fastify.addHook('onClose', async () => {
-        await connection.close();
+        if (!actualOptions.ignoreOnClose) {
+            await connection.close();
+        }
     });
 
     let channel;

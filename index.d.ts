@@ -22,6 +22,13 @@ declare namespace fastifyAmqpAsync {
          * @default false
          */
         useRegularChannel?: boolean;
+        /**
+         * Ignore the default onClose handler which closes the connection
+         * If set to true, you have to manage closing the connection yourself
+         * (i.e. after waiting for all in-flight messages to be delivered)
+         * @default false
+         */
+        ignoreOnClose?: boolean;
     }
 }
 
