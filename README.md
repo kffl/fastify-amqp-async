@@ -5,7 +5,7 @@
 [![NPM downloads](https://img.shields.io/npm/dm/fastify-amqp-async.svg?style=flat)](https://www.npmjs.com/package/fastify-amqp-async)
 [![Known Vulnerabilities](https://snyk.io/test/github/kffl/fastify-amqp-async/badge.svg)](https://snyk.io/test/github/kffl/fastify-amqp-async)
 
-**fastify-amqp-async** is a Fastify plugin inspired by **fastify-amqp** which allows for interacting with RabbitMQ using a more modern, Promise-based API provided by [amqplib-as-promised](https://github.com/twawszczak/amqplib-as-promised), so that writing publishers/consumers doesn't feel like 2013.
+**fastify-amqp-async** is a Fastify plugin inspired by **fastify-amqp** which allows for interacting with RabbitMQ using a more modern, Promise-based API provided by [amqplib-as-promised](https://github.com/twawszczak/amqplib-as-promised), so that writing publishers doesn't feel like 2013.
 
 ## Features
 
@@ -55,7 +55,7 @@ You can find additional usage examples in the `examples` folder.
 
 ## Reference
 
-The config object passed as a second parameter passed to `register()` is optional (since all 3 of its keys have default values) has the following schema:
+The config object passed as a second parameter passed to `register()` is optional (since all 4 of its keys have default values) has the following schema:
 
 ```typescript
 interface FastifyAmqpAsyncOptions {
