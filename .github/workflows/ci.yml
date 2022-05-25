@@ -8,7 +8,7 @@ jobs:
 
     strategy:
       matrix:
-        node: [10, 12, 14, 16, 17]
+        node: [10, 12, 14, 16, 17, 18]
 
     name: Test on node version ${{ matrix.node }}
 
@@ -19,7 +19,9 @@ jobs:
           - 5672:5672
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v3
+
+    - uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
 
