@@ -11,12 +11,16 @@ const defaultOptions = {
 async function fastifyAmqpAsync(fastify, options) {
     const actualOptions = Object.assign({}, defaultOptions, options);
 
+    const logger = fastify.log.child({ plugin: 'fastify-amqp-async' });
+
+    logger.info('opening AMQP connection');
     const connection = await amqplibAsPromised.connect(
         actualOptions.connectionString
     );
 
     fastify.addHook('onClose', async () => {
         if (!actualOptions.ignoreOnClose) {
+            logger.info('closing AMQP connection');
             await connection.close();
         }
     });
@@ -24,12 +28,14 @@ async function fastifyAmqpAsync(fastify, options) {
     let channel;
 
     if (actualOptions.useRegularChannel) {
+        logger.debug('creating AMQP channel without publisher confirms');
         channel = await connection.createChannel();
     }
 
     let confirmChannel;
 
     if (actualOptions.useConfirmChannel) {
+        logger.debug('creating AMQP channel with publisher confirms');
         confirmChannel = await connection.createConfirmChannel();
     }
 
