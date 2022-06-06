@@ -37,7 +37,7 @@
     "typescript": "^4.5.4"
   },
   "dependencies": {
-    "amqplib-as-promised": "npm:@kffl/amqplib-as-promised@^5.0.1",
+    "amqplib-as-promised": "npm:@kffl/amqplib-as-promised@^5.0.3",
     "fastify-plugin": "^3.0.0"
   }
 }
