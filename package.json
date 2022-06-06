@@ -28,7 +28,7 @@
   "homepage": "https://github.com/kffl/fastify-amqp-async#readme",
   "devDependencies": {
     "@types/amqplib": "^0.8.2",
-    "@types/jest": "^27.0.3",
+    "@types/jest": "^28.1.1",
     "fastify": "^3.25.1",
     "jest": "^28.0.3",
     "npm-force-resolutions": "^0.0.10",
