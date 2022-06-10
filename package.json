@@ -29,7 +29,7 @@
   "devDependencies": {
     "@types/amqplib": "^0.8.2",
     "@types/jest": "^27.0.3",
-    "fastify": "^3.25.1",
+    "fastify": "^4.0.0",
     "jest": "^28.0.3",
     "npm-force-resolutions": "^0.0.10",
     "prettier": "^2.5.1",
