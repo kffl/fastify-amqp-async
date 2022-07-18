@@ -38,6 +38,6 @@
   },
   "dependencies": {
     "amqplib-as-promised": "npm:@kffl/amqplib-as-promised@^5.0.3",
-    "fastify-plugin": "^3.0.0"
+    "fastify-plugin": "^4.0.0"
   }
 }
