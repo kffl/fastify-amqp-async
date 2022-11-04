@@ -5,7 +5,8 @@ const defaultOptions = {
     connectionString: 'amqp://guest:guest@localhost:5672',
     useConfirmChannel: true,
     useRegularChannel: false,
-    ignoreOnClose: false
+    ignoreOnClose: false,
+    name: 'amqp',
 };
 
 async function fastifyAmqpAsync(fastify, options) {
@@ -39,7 +40,7 @@ async function fastifyAmqpAsync(fastify, options) {
         confirmChannel = await connection.createConfirmChannel();
     }
 
-    fastify.decorate('amqp', {
+    fastify.decorate(actualOptions.name, {
         connection,
         channel,
         confirmChannel
