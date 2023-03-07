@@ -33,7 +33,7 @@
     "jest": "^28.0.3",
     "npm-force-resolutions": "^0.0.10",
     "prettier": "^2.5.1",
-    "tsd": "^0.20.0",
+    "tsd": "^0.26.1",
     "typescript": "^4.5.4"
   },
   "dependencies": {
