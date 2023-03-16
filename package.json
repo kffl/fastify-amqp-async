@@ -34,7 +34,7 @@
     "npm-force-resolutions": "^0.0.10",
     "prettier": "^2.5.1",
     "tsd": "^0.20.0",
-    "typescript": "^4.5.4"
+    "typescript": "^5.0.2"
   },
   "dependencies": {
     "amqplib-as-promised": "npm:@kffl/amqplib-as-promised@^5.0.3",
